@@ -1,14 +1,16 @@
 <template>
-    <div> 
+    <div class="bg-gray-100"> 
         <landing-page></landing-page>
-        <h2 class="text-4xl font-medium text-center">Welcome to shopping cart application.</h2>
+        <product-list></product-list>
     </div>
 </template>
 <script>
 import LandingPage from './../components/home/LandingPage.vue'
+import ProductList from './../components/products/ProductList.vue'
 export default {
     components: {
-        LandingPage
+        LandingPage,
+        ProductList
     }
 }
 </script>
