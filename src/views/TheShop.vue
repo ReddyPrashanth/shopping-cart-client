@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-gray-200 flex px-16 py-2">
-        <div class="w-1/5 mr-2 bg-white shadow-lg rounded divide-y">
+    <div class="bg-gray-200 flex py-2">
+        <div class="w-1/5 lg:w-1/4 xl:w-1/5 hidden lg:block mx-2 bg-white shadow-lg rounded divide-y">
             <h2 class="font-semibold text-lg px-2 py-3">Filters</h2>
             <checkbox-filter :filters="categories" name="Categories"></checkbox-filter>
             <checkbox-filter :filters="brands" name="Brands"></checkbox-filter>
@@ -8,16 +8,21 @@
             <checkbox-filter :filters="ratings" name="Customer Ratings"></checkbox-filter>
             <checkbox-filter :filters="discounts" name="Discount"></checkbox-filter>
         </div>
-        <div class="w-4/5 bg-white shadow-lg rounded p-2">
-            <h2>Product List</h2>
+        <div class="w-full lg:w-3/4 xl:w-4/5 bg-white shadow-lg rounded p-2">
+            <product-list classes="md:w-1/2 xl:w-1/4" title="Products"></product-list>
+            <base-paginator></base-paginator>
         </div>
     </div>
 </template>
 <script>
 import CheckboxFilter from './../components/products/CheckboxFilter.vue'
+import ProductList from './../components/products/ProductList.vue'
+import BasePaginator from './../components/UI/BasePaginator.vue'
 export default {
     components: {
-        CheckboxFilter
+        CheckboxFilter,
+        ProductList,
+        BasePaginator
     },
     data() {
         return {

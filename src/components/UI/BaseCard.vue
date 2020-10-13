@@ -8,7 +8,7 @@
             </p> 
         </div>
         <div class="flex items-center justify-between px-4 py-3">
-            <button class="btn sm:font-semibold">Add to cart</button>
+            <button class="btn text-sm">Add to cart</button>
             <the-rating></the-rating>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen flex justify-center items-center px-16">
+    <div class="h-screen flex justify-center items-center px-2 md:px-16">
         <form class="w-full sm:w-1/2 lg:w-1/3 p-4 rounded shadow-xl">
             <h2 class="text-lg font-semibold text-center mb-4">User Login</h2>
             <div class="flex items-center mb-6">

@@ -1,7 +1,7 @@
 <template>
-  <the-header></the-header>
-  <router-view/>
-  <the-footer></the-footer>
+    <the-header></the-header>
+    <router-view/>
+    <the-footer></the-footer>
 </template>
 <script>
 import TheHeader from './components/layouts/TheHeader.vue'

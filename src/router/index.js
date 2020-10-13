@@ -8,7 +8,8 @@ import NotFound from '../views/NotFound.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/home',
+    name: 'App'
   },
   {
     path: '/home',
@@ -38,7 +39,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
 })
 
 export default router

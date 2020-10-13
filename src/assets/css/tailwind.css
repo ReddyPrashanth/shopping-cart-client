@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 @layer components {
     .btn {
@@ -9,4 +8,9 @@
     .btn:hover {
         @apply bg-gray-900 text-white;
     }
+    .router-link-active {
+        @apply bg-gray-600
+    }
 }
+
+@tailwind utilities;
