@@ -17,7 +17,7 @@ const routes = [
     component: TheHome
   },
   {
-    path: '/shop',
+    path: '/shop/:category',
     name: 'Shop',
     component: TheShop
   },

@@ -1,0 +1,375 @@
+[
+    {
+      "id": 1,
+      "name": "Electronics",
+      "tag": "electronics",
+      "sub_categories": [
+        {
+          "id": 1,
+          "name": "Desktops",
+          "tag": "desktops",
+          "category_id": 1
+        },
+        {
+          "id": 2,
+          "name": "Laptops",
+          "tag": "laptops",
+          "category_id": 1
+        },
+        {
+          "id": 3,
+          "name": "Play Station",
+          "tag": "play-station",
+          "category_id": 1
+        },
+        {
+          "id": 4,
+          "name": "XBox One",
+          "tag": "xbox",
+          "category_id": 1
+        },
+        {
+          "id": 5,
+          "name": "Speakers",
+          "tag": "speakers",
+          "category_id": 1
+        },
+        {
+          "id": 6,
+          "name": "Keyboard",
+          "tag": "keyboard",
+          "category_id": 1
+        },
+        {
+          "id": 7,
+          "name": "Mouse",
+          "tag": "mouse",
+          "category_id": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Phones",
+      "tag": "mobile-phones",
+      "sub_categories": [
+        {
+          "id": 8,
+          "name": "Smart Phones",
+          "tag": "smart-phones",
+          "category_id": 2
+        },
+        {
+          "id": 9,
+          "name": "Apple Phones",
+          "tag": "iphone",
+          "category_id": 2
+        },
+        {
+          "id": 10,
+          "name": "Mobile Speakers",
+          "tag": "mobile-speakers",
+          "category_id": 2
+        },
+        {
+          "id": 11,
+          "name": "Head Phones",
+          "tag": "head-phones",
+          "category_id": 2
+        },
+        {
+          "id": 12,
+          "name": "Ear Phones",
+          "tag": "ear-phones",
+          "category_id": 2
+        },
+        {
+          "id": 13,
+          "name": "Mobile Accessories",
+          "tag": "mobile-accessories",
+          "category_id": 2
+        },
+        {
+          "id": 14,
+          "name": "Phone Cases",
+          "tag": "phone-cases",
+          "category_id": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mens Clothing",
+      "tag": "mens-clothing",
+      "sub_categories": [
+        {
+          "id": 15,
+          "name": "Jeans",
+          "tag": "jeans",
+          "category_id": 3
+        },
+        {
+          "id": 16,
+          "name": "Shirts",
+          "tag": "shirts",
+          "category_id": 3
+        },
+        {
+          "id": 17,
+          "name": "T-Shirts",
+          "tag": "tshirts",
+          "category_id": 3
+        },
+        {
+          "id": 18,
+          "name": "Trousers",
+          "tag": "trousers",
+          "category_id": 3
+        },
+        {
+          "id": 19,
+          "name": "Sweatshirts",
+          "tag": "sweatshirts",
+          "category_id": 3
+        },
+        {
+          "id": 20,
+          "name": "Joggers",
+          "tag": "joggers",
+          "category_id": 3
+        },
+        {
+          "id": 21,
+          "name": "Shorts",
+          "tag": "shorts",
+          "category_id": 3
+        },
+        {
+          "id": 22,
+          "name": "Track Pants",
+          "tag": "track-pants",
+          "category_id": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Womens Clothing",
+      "tag": "womens-clothing",
+      "sub_categories": [
+        {
+          "id": 23,
+          "name": "Jeans",
+          "tag": "jeans",
+          "category_id": 4
+        },
+        {
+          "id": 24,
+          "name": "Shirts",
+          "tag": "shirts",
+          "category_id": 4
+        },
+        {
+          "id": 25,
+          "name": "T-Shirts",
+          "tag": "tshirts",
+          "category_id": 4
+        },
+        {
+          "id": 26,
+          "name": "Jeggings",
+          "tag": "jeggings",
+          "category_id": 4
+        },
+        {
+          "id": 27,
+          "name": "Sweatshirts",
+          "tag": "sweatshirts",
+          "category_id": 4
+        },
+        {
+          "id": 28,
+          "name": "Trousers & Capris",
+          "tag": "trousers-capris",
+          "category_id": 4
+        },
+        {
+          "id": 29,
+          "name": "Panties",
+          "tag": "panties",
+          "category_id": 4
+        },
+        {
+          "id": 30,
+          "name": "Night Dresses",
+          "tag": "night-dresses",
+          "category_id": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Shoes",
+      "tag": "shoes",
+      "sub_categories": [
+        {
+          "id": 31,
+          "name": "Casual Shoes",
+          "tag": "casual-shoes",
+          "category_id": 5
+        },
+        {
+          "id": 32,
+          "name": "Sports Shoes",
+          "tag": "sports-shoes",
+          "category_id": 5
+        },
+        {
+          "id": 33,
+          "name": "Running Shoes",
+          "tag": "running-shoes",
+          "category_id": 5
+        },
+        {
+          "id": 34,
+          "name": "Workout Shoes",
+          "tag": "workout-shoes",
+          "category_id": 5
+        },
+        {
+          "id": 35,
+          "name": "Flats",
+          "tag": "flats",
+          "category_id": 5
+        },
+        {
+          "id": 36,
+          "name": "Socks",
+          "tag": "socks",
+          "category_id": 5
+        },
+        {
+          "id": 37,
+          "name": "Formal Shoes",
+          "tag": "formal-shoes",
+          "category_id": 5
+        },
+        {
+          "id": 38,
+          "name": "Boots",
+          "tag": "boots",
+          "category_id": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "TVs & Appliances",
+      "tag": "tvs",
+      "sub_categories": [
+        {
+          "id": 39,
+          "name": "Smart TVs",
+          "tag": "smart-tvs",
+          "category_id": 6
+        },
+        {
+          "id": 40,
+          "name": "Android TVs",
+          "tag": "android-tvs",
+          "category_id": 6
+        },
+        {
+          "id": 41,
+          "name": "Refrigerators",
+          "tag": "refrigerators",
+          "category_id": 6
+        },
+        {
+          "id": 42,
+          "name": "Washing Machines",
+          "tag": "washing-machines",
+          "category_id": 6
+        },
+        {
+          "id": 43,
+          "name": "Air Conditioners",
+          "tag": "air-conditioners",
+          "category_id": 6
+        },
+        {
+          "id": 44,
+          "name": "TV Speakers",
+          "tag": "tv-speakers",
+          "category_id": 6
+        },
+        {
+          "id": 45,
+          "name": "Microwave Owens",
+          "tag": "microwave-owens",
+          "category_id": 6
+        },
+        {
+          "id": 46,
+          "name": "Dish Washers",
+          "tag": "dish-washers",
+          "category_id": 6
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Housing & Furniture",
+      "tag": "housing-furniture",
+      "sub_categories": [
+        {
+          "id": 47,
+          "name": "Sofa",
+          "tag": "sofa",
+          "category_id": 7
+        },
+        {
+          "id": 48,
+          "name": "Beds & Matresses",
+          "tag": "beds-matresses",
+          "category_id": 7
+        },
+        {
+          "id": 49,
+          "name": "TV Units",
+          "tag": "tv-units",
+          "category_id": 7
+        },
+        {
+          "id": 50,
+          "name": "Jeggings",
+          "tag": "jeggings",
+          "category_id": 7
+        },
+        {
+          "id": 51,
+          "name": "Wardrobes",
+          "tag": "wardrobes",
+          "category_id": 7
+        },
+        {
+          "id": 52,
+          "name": "Dining Tables",
+          "tag": "dining-tables",
+          "category_id": 7
+        },
+        {
+          "id": 53,
+          "name": "Coffee Tables",
+          "tag": "coffee-tables",
+          "category_id": 7
+        },
+        {
+          "id": 54,
+          "name": "Kotchen Appliances",
+          "tag": "kitchen-appliances",
+          "category_id": 7
+        }
+      ]
+    }
+  ]

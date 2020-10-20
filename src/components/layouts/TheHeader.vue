@@ -2,7 +2,7 @@
     <header class="bg-gray-900 text-white sm:flex sm:justify-between px-4 py-3">
         <div class="flex items-center justify-between">
             <div class="px-2">
-                <router-link class="text-xl font-semibold flex items-center" :to="{name:'App'}">
+                <router-link class="text-xl font-semibold flex items-center" :to="{name:'App', params: {category: 'electronics'}}">
                     <svg class="h-6 w-6 fill-current text-white mr-2" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/>
                     </svg>
@@ -19,7 +19,7 @@
         </div>
         <div :class="isOpen ? 'block' : 'hidden'" class="pt-2 pb-2 sm:flex sm:items-center sm:pb-0 sm:pt-0"> 
             <router-link :to="{name:'Home'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Home</router-link>
-            <router-link :to="{name: 'Shop'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Shop</router-link>
+            <router-link :to="{name: 'Shop', params: {category: 'electronics'}}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Shop</router-link>
             <router-link :to="{name: 'Cart'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Cart</router-link>
             <router-link :to="{name: 'Login'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Login</router-link>
         </div>
