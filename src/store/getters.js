@@ -3,6 +3,12 @@ export default {
         return state.loading;
     },
     error(state) {
-        return state.message
+        return state.message;
+    },
+    categories(state) {
+        return state.categories;
+    },
+    featuredProducts(state) {
+        return state.featuredProducts;
     }
 }

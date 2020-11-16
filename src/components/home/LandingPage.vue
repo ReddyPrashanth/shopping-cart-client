@@ -2,7 +2,7 @@
     <div class="bg-gray-200 flex items-center justify-around">
         <div class="my-16 w-1/3 text-center">
             <h3 class="sm:font-semibold sm:text-lg mb-3 text-sm">Shopping cart application using Vue Js 3. You can use below link to visit our shopping page.</h3>
-            <router-link :to="{name: 'Shop', params: {category: 'electronics'}}" class="bg-gray-200 p-1 sm:py-2 sm:px-4 rounded sm:font-semibold border-black border-2 hover:bg-gray-900 hover:text-white">Shop</router-link>
+            <router-link :to="{name: 'Shop', params: {category: 'laptops'}, query:{page:1}}" class="bg-gray-200 p-1 sm:py-2 sm:px-4 rounded sm:font-semibold border-black border-2 hover:bg-gray-900 hover:text-white">Shop</router-link>
         </div>
         <div class="my-16">
             <svg class="h-32 w-32 sm:h-64 sm:w-64 fill-current" viewBox="0 0 24 24">

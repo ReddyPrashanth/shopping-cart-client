@@ -9,7 +9,7 @@
             <checkbox-filter :filters="discounts" name="Discount"></checkbox-filter>
         </div>
         <div class="w-full lg:w-3/4 xl:w-4/5 bg-white shadow-lg rounded p-2">
-            <product-list classes="md:w-1/2 xl:w-1/4" title="Products"></product-list>
+            <product-list :products="products" classes="md:w-1/2 xl:w-1/4" title="Products"></product-list>
             <base-paginator></base-paginator>
         </div>
     </div>
@@ -18,6 +18,7 @@
 import CheckboxFilter from './../components/products/CheckboxFilter.vue'
 import ProductList from './../components/products/ProductList.vue'
 import BasePaginator from './../components/UI/BasePaginator.vue'
+import {mapGetters} from 'vuex'
 export default {
     components: {
         CheckboxFilter,
@@ -32,6 +33,18 @@ export default {
             gender: ['Men', 'Women'],
             categories: ['Clothing', 'Electronics', 'Shoes', 'Watches', 'TVs & Appliances', 'Home & Furniture', 'Accesories']
         }
+    },
+    computed: {
+        ...mapGetters({
+            products: 'products/products'
+        })
+    },
+    beforeRouteUpdate(to, from, next) {
+        this.$store.dispatch('products/products', {category:to.params.category,page:to.query.page});
+        next();
+    },
+    created() {
+        this.$store.dispatch('products/products', {category:this.$route.params.category,page:this.$route.query.page});
     }
 }
 </script>

@@ -2,8 +2,8 @@
     <div>
         <h2 class="text-lg mb-4 sm:text-2xl text-center font-semibold">{{title}}</h2>
         <div class="flex flex-wrap">
-            <div v-for="i in 8" :key="i" class="w-full" :class="classes">
-                <base-card></base-card>
+            <div v-for="product in products" :key="product.id" class="w-full" :class="classes">
+                <base-card :product="product"></base-card>
             </div>
         </div>
     </div>
@@ -15,6 +15,6 @@ export default {
     components: {
         BaseCard
     },
-    props: ['classes','title']
+    props: ['classes','title','products']
 }
 </script>
