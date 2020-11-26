@@ -1,7 +1,11 @@
 import CategoryRepository from './CategoryRepository'
+import ReviewRepository from './ReviewRepository'
+import ProductRepository from './ProductRepository'
 
 const repositories = {
-    'categories': CategoryRepository
+    'categories': CategoryRepository,
+    'reviews': ReviewRepository,
+    'products': ProductRepository
 }
 
 export default {

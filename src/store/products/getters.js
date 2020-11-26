@@ -16,5 +16,8 @@ export default {
     },
     totalPages(state) {
         return Math.round(state.total/state.per_page);
+    },
+    product(state) {
+        return state.product;
     }
 }

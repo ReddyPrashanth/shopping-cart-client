@@ -1,6 +1,9 @@
 
-import CategoryRepository from '../repositories/CategoryRepository';
-import ProductRepository from '../repositories/ProductRepository';
+import RepositoryFactory from '../repositories/RepositoryFactory'
+
+const productRepository = RepositoryFactory.get('products');
+const categoryRepository = RepositoryFactory.get('categories');
+
 
 export default {
     loading(context, loading) {
@@ -10,11 +13,11 @@ export default {
         context.commit('setError', message);
     },
     async categories(context) {
-        const response = await CategoryRepository.index();
+        const response = await categoryRepository.index();
         context.commit('setCategories', response.data);
     },
     async featuredProducts(context) {
-        const response = await ProductRepository.featured();
+        const response = await productRepository.featured();
         context.commit('setFeaturedProducts', response.data);
     }
 }

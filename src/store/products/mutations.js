@@ -10,5 +10,8 @@ export default {
     setLinks(state, links) {
         state.next = links.next;
         state.prev = links.prev;
+    },
+    setProduct(state, product) {
+        state.product = product;
     }
 }

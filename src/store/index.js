@@ -3,6 +3,7 @@ import actions from './actions'
 import mutations from './mutations'
 import getters from './getters'
 import products from './products/index'
+import reviews from './reviews/index'
 
 export default createStore({
   state: {
@@ -15,6 +16,7 @@ export default createStore({
   actions,
   getters,
   modules: {
-    products
+    products,
+    reviews
   }
 })

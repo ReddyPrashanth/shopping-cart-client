@@ -1,18 +1,14 @@
-import mutations from './mutations'
 import actions from './actions'
+import mutations from './mutations'
 import getters from './getters'
 
 export default {
     namespaced: true,
     state: {
-        products: [],
-        current_page: 1,
-        last_page: null,
-        per_page: 16,
+        reviews: [],
         next: null,
         prev: null,
-        total: 0,
-        product: null
+        current_page: 1
     },
     mutations,
     actions,
