@@ -10,8 +10,10 @@
             </p> 
         </div>
         <div class="flex items-center justify-between px-4 py-3">
-            <button class="btn text-sm">Add to cart</button>
-            <the-rating :rating="rating"></the-rating>
+            <p>${{product.price}}</p>
+            <div>
+                <the-rating :rating="rating"></the-rating>
+            </div>
         </div>
     </div>
 </template>
@@ -32,6 +34,6 @@ export default {
         rating(){
             return Number.parseInt(this.product.rating);
         }
-    }
+    },
 }
 </script>

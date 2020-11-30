@@ -1,11 +1,13 @@
 import CategoryRepository from './CategoryRepository'
 import ReviewRepository from './ReviewRepository'
 import ProductRepository from './ProductRepository'
+import CartRepository from './CartRepository'
 
 const repositories = {
     'categories': CategoryRepository,
     'reviews': ReviewRepository,
-    'products': ProductRepository
+    'products': ProductRepository,
+    'cart': CartRepository
 }
 
 export default {

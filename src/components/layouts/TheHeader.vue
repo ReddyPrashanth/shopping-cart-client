@@ -19,18 +19,24 @@
         </div>
         <div :class="isOpen ? 'block' : 'hidden'" class="pt-2 pb-2 sm:flex sm:items-center sm:pb-0 sm:pt-0"> 
             <router-link :to="{name:'Home'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Home</router-link>
-            <router-link :to="{name: 'Shop', params: {category: 'electronics'}}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Shop</router-link>
-            <router-link :to="{name: 'Cart'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Cart</router-link>
+            <router-link :to="{name: 'Shop', params: {category: 'laptops'}}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Shop</router-link>
+            <router-link :to="{name: 'Cart'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Cart <span v-if="quantity > 0" class="text-xs font-semibold inline-block px-1 rounded-full text-pink-500 bg-pink-200 last:mr-0 mr-1">{{quantity}}</span></router-link>
             <router-link :to="{name: 'Login'}" class="block px-2 py-1 mr-1 sm:px-4 text-sm hover:bg-gray-600 rounded font-semibold">Login</router-link>
         </div>
     </header>
 </template>
 <script>
+import {mapGetters} from 'vuex';
 export default {
     data(){
         return {
             isOpen: false
         }
+    },
+    computed: {
+        ...mapGetters({
+            quantity: 'cart/quantity'
+        })
     }
 }
 </script>

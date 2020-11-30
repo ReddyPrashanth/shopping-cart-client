@@ -10,5 +10,8 @@ export default {
     },
     featuredProducts(state) {
         return state.featuredProducts;
+    },
+    cartId(state) {
+        return state.cartId;
     }
 }

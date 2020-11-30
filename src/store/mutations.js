@@ -10,5 +10,5 @@ export default {
     },
     setFeaturedProducts(state, products) {
         state.featuredProducts = products;
-    }
+    },
 }

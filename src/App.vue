@@ -21,6 +21,7 @@ export default {
     ])
   },
   async created(){
+    this.$store.dispatch('cart/createCartId');
     this.$store.dispatch('categories');
     this.$store.dispatch('featuredProducts');
   }

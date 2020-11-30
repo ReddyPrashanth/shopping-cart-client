@@ -44,7 +44,7 @@ export default {
         next();
     },
     created() {
-        this.$store.dispatch('products/products', {category:this.$route.params.category,page:this.$route.query.page});
+        this.$store.dispatch('products/products', {category:this.$route.params.category,page:this.$route.query.page ?? 1});
     }
 }
 </script>

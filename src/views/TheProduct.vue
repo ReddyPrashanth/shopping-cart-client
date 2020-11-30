@@ -18,7 +18,7 @@
                     <p v-if="product.count" class="text-green-500">In Stock.</p>
                     <p v-else class="text-red-700">Out Of Stock.</p>
                 </div>
-                <select name="count" class="border rounded border-gray-400 p-1">
+                <select v-model="quantity" class="border rounded border-gray-400 p-1">
                     <option v-for="i in product.count" :value="i" :key="i">{{i}}</option>
                 </select>
             </div>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <button class="px-2 rounded border-2 border-gray-900 hover:bg-gray-900 hover:text-white">Add to Cart</button>
+                <button @click="addToCart" class="px-2 rounded border-2 border-gray-900 hover:bg-gray-900 hover:text-white">Add to Cart</button>
             </div>
         </div>
     </div>
@@ -63,6 +63,11 @@ export default {
         TheReviews,
         CustomerRating
     },
+    data(){
+        return {
+            quantity: 1
+        }
+    },
     computed: {
         ...mapGetters({
             product: 'products/product',
@@ -70,6 +75,15 @@ export default {
         }),
         rating() {
             return this.product ? Number.parseInt(this.product.rating) : 0;
+        }
+    },
+    methods: {
+        addToCart() {
+            const params = {
+                product: this.product,
+                quantity: this.quantity
+            }
+            this.$store.dispatch('cart/addToCart', params);
         }
     },
     created() {
